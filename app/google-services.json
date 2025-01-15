@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "226149558868",
+    "firebase_url": "https://meditationapp-9413b-default-rtdb.firebaseio.com",
+    "project_id": "meditationapp-9413b",
+    "storage_bucket": "meditationapp-9413b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226149558868:android:746434f41c3c5b74eb5bc1",
+        "android_client_info": {
+          "package_name": "com.example.meditation_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH88UpqvNr4_CFPle3xx4W2TmGrMdfKZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

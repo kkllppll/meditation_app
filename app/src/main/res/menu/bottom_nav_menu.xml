@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_meditations"
+        android:icon="@drawable/ic_meditation"
+        android:title="Медитації" />
+
+
+    <item
+        android:id="@+id/nav_user"
+        android:icon="@drawable/ic_user"
+        android:title="Користувач"
+        />
+
+</menu>

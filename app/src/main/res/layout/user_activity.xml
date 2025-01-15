@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ім'я користувача -->
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Ім'я користувача"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/on_background_black" />
+
+        <!-- дата реєстрації -->
+        <TextView
+            android:id="@+id/registrationDateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Дата реєстрації: "
+            android:textSize="16sp"
+            android:textColor="@color/on_background_black" />
+
+        <!-- заголовок для списку збережених медитацій -->
+        <TextView
+            android:id="@+id/savedMeditationsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Збережені медитації"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/on_background_black" />
+
+        <!-- список збережених медитацій -->
+        <ListView
+            android:id="@+id/savedMeditationsListView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            android:background="#1A1A1A" />
+
+        <!-- кнопка для виходу -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/secondary"
+            android:padding="12dp"
+            android:text="Вийти"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

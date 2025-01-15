@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <!-- Текст "Привіт" -->
+    <TextView
+        android:id="@+id/greetingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Привіт! "
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/secondary"
+        android:shadowColor="#D3D3D3"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+
+    <!-- Поле для Email -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/on_background_black"
+        android:background="@drawable/edittext_border"
+        android:padding="12dp" />
+
+    <!-- Поле для Password -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/on_background_black"
+        android:background="@drawable/edittext_border"
+        android:padding="12dp" />
+
+    <!-- Кнопка Register -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Реєстрація"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/secondary"
+        android:textColor="@color/on_primary" />
+
+    <!-- Кнопка Login -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ввійти"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/on_primary" />
+
+    <!-- Статус -->
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="@color/on_background_black" />
+
+</LinearLayout>

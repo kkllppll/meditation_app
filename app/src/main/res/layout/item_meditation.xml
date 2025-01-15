@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/gray_light">
+
+        <!-- заголовок медитації -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Назва медитації"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <!-- опис медитації -->
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTextView"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif"
+            android:text="Опис медитації"
+            android:textColor="#757575"
+            android:textSize="14sp" />
+
+        <!-- кнопка Улюблене (сердечко) -->
+        <ImageView
+            android:id="@+id/favoriteButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Кнопка збереженого"
+            android:src="@drawable/ic_favorite"
+            app:tint="@color/secondary" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
